@@ -1,1 +1,27 @@
 This project is the second part of the Udacity Fullstack Nanodegree program. It is a python module which keeps track of players in a tournament. It test various functionality of the module, including Table/View creation, insertion and deletion, and also tests a  Swiss-style tournament arrangement, which produces a definite winner in a few rounds, no-one is eliminated and everyone wins at least one round.
+
+To run the tournament module, first open up a Terminal shell (Mac OSX).
+
+From the Command Line, clone the Udacity tournament Git repo using the following command:
+
+git clone http://github.com/udacity/fullstack-nanodegree-vm fullstack
+
+After you have cloned the tournament repo, you will need to install Virtual Machine and Vagrant if you do not already have them installed on your computer.
+
+After installation, run the following commands:
+
+vagrant up
+
+vagrant ssh
+
+This will take a few minutes to start up, but once you are logged into the Virtual Machine, cd into the follwing path:
+
+cd /vagrant/tournament
+
+You will then need to start PostgreSQL by typing psql into the command line.
+
+Once loged into PostgreSQL, type the following command:
+
+\i tournament.py
+
+This will successfullt run the tournament.py file against the Udacity tests!
