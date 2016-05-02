@@ -73,7 +73,12 @@ def reportMatch(winner, loser):
     db.close()
 
 def swissPairings():
-    """Returns a list of pairs of players for the next round of a match."""
+    """Returns a list of pairs of players for the next round of a match.
+        Each player is paired against each other player at least once. Players
+        with simlar standings are paired with the other players who have
+        simlar standings. In this system, players are not outright eliminated
+        as in a traditional tournament.
+    """
 
     db = connect()
     c = db.cursor()
